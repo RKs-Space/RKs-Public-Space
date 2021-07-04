@@ -1,0 +1,15 @@
+﻿
+
+
+
+    body {
+            background-color: grey;
+        }
+
+        .startedDropdown {
+            display: none;
+        }
+
+        .Mandatory-field-marker {
+            color: red;
+        }

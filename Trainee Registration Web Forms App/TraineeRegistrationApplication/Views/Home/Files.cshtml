@@ -1,0 +1,33 @@
+﻿@model TraineeRegistrationApplication.Models.Picture
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Files</title>
+</head>
+<body>
+    <div>
+
+         <h1 style="text-align:center">File Uploader</h1>
+        @using (Html.BeginForm(null,null,FormMethod.Post,new{enctype="multipart/form-data"}))
+        {
+           <input type="file" name="file" id="file" />
+        
+              
+        <br />  
+
+               <input type="text" id="tx" />
+                  
+                 <input type="submit" name="submit" value="Uploadd" id="sub"/>
+     <h3 style="text-align:center"> @ViewBag.result</h3>
+        }
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,346 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Add_Trainee_Details</title>
+    
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     
+    
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Toaster Links-->   
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js.map"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet"/>
+
+    <!-- Jquery Liks-->
+    <link href="~/Content/themes/base/jquery-ui.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.7.1.min.js"></script>
+    <script src="~/Scripts/jquery-ui-1.8.20.js"></script>
+
+   <!--Animation Related-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/> 
+
+    <script src="wow.min.js"></script>
+              <script>
+                  new WOW().init();
+              </script>
+
+
+
+   <!--Designer defined stylesheet-->
+    <link href="~/Content/themes/base/minified/traineeRegistrationStylesheet.css" rel="stylesheet" />
+    <style type="text/css">
+        @@font-face {
+                        font-family:applicationFont;
+                        src: url(INKFERNO.otf);
+                   }
+              
+        h1 {
+             font-family:applicationFont;    
+             line-height:90px;  
+             color:white;      
+           }
+        body {
+             font-family:applicationFont;
+             font-size:19px;
+             color:black;
+             z-index:99;
+             }
+        input[type=text] {
+                          width:100%;
+                         }
+        #workDoneId {
+                       width:100%;
+                       height:120px;
+                    }
+        #commentId {
+                        width:100%;
+                       height:120px;
+                    }
+       .thumb {
+    height: 75px;
+    border: 1px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 10px 5px 0 0;
+
+     
+  
+  }
+
+
+        .thumb:hover {
+                       box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+                     }
+
+
+       
+         .parallax {
+    /* The image used */
+    background-image: url("https://static.pexels.com/photos/288157/pexels-photo-288157.jpeg");
+
+    /* Set a specific height */
+    min-height: 450px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index:99;
+    
+}
+
+         .layer {                               
+                     opacity:0.93;            
+               }
+          /*.layer:hover {                         
+                   opacity:1;
+                       }*/
+            .layer:before {
+                 position: fixed;
+                 content:" ";
+                 top:0;
+                 left:0;
+                 width:100%;
+                 height:100%;
+                 display: block;
+                 z-index:-1;
+                 background-color: rgba(0,0,0,0.5);
+                          } 
+
+
+    </style>
+    @*Script to insert data using web api and ajax call*@
+    <script src="~/Scripts/traineeRegistration.js"></script>
+    
+    
+</head>
+<body class="parallax layer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12">
+                <center><h1 class="animated fadeInRight" data-wow-duration="5s" data-wow-delay="0s""> TRAINEE &nbsp REGISTRATION &nbsp APPLICATION  </h1></center>
+            </div>
+        </div>
+
+
+
+        <br /><br />
+        <form data-toggle="validator" role="form">
+        
+            <div class="row">
+                <div class="col-md-2">
+                   <span style="color:white"> Enter Trainee Id </span> <span class="Mandatory-field-marker">*</span>
+                </div>
+                <div class="col-md-3">
+                   
+                    <input type="text" id="traineeId" required />
+                       
+                </div>
+            </div>
+            <br />
+                   
+            <div class="row">
+                <div class="col-md-2">
+                    Full Name  <span class="Mandatory-field-marker">*</span>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" id="firstNameId" required placeholder="First Name" />
+                </div>
+                <div class="col-md-4">
+                    <input type="text" id="lastNameId" required placeholder="Last Name" />
+                </div>
+            </div>
+            <br />
+                 
+                    
+            <div class="row">
+                <div class="col-md-2">
+                    Today's Date  <span class="Mandatory-field-marker">*</span>
+                </div>
+                <div class="col-md-5">
+                    @{
+            DateTime dtNow = DateTime.Now;                       
+                    }
+                    <input type="text" id="todaysDateId" value=@dtNow readonly/>
+                </div>
+            </div>
+            <br />
+              
+            <div class="row">
+                <div class="col-md-2">
+                    Started at  <span class="Mandatory-field-marker">*</span>
+                </div>
+                <div class="col-md-8">
+                    <select id="startedAtId">
+                        <option selected="selected" class="startedDropdown">Please Select</option>
+                        <option value="home">Home</option>
+                        <option value="client">Client</option>
+                        <option value="office">Office</option>
+
+                    </select>
+                </div>
+            </div>
+            <br />
+
+            <div class="row">
+                <div class="col-md-2">
+                    Where  <span class="Mandatory-field-marker">*</span>
+                </div>
+                <div class="col-md-8">
+                    <input type="text" id="whereId" required />
+                </div>
+            </div>
+            <br />                                    
+                    
+            <div class="row">
+                <div class="col-md-2">
+                    Job Name  <span class="Mandatory-field-marker">*</span>
+                </div>
+                <div class="col-md-3">
+                    <input type="text" id="jobNameId" required />
+                </div>
+            </div>
+            <br />   
+                    
+            <div class="row">
+                <div class="col-md-2">
+                    Arrived at job  <span class="Mandatory-field-marker">*</span>
+                </div>
+                <div class="col-md-4">
+                    <input type="time" id="fromTimeId" required />
+                    &nbsp&nbsp      
+                    
+                    @Html.Label("Until")  &nbsp&nbsp      
+                 <input type="time" id="untilTimeId" required />
+                </div>
+            </div>
+            <br />
+                    
+            <div class="row">
+                <div class="col-md-2">
+                    Work Done  <span class="Mandatory-field-marker">*</span>
+                </div>
+                <div class="col-md-8">
+                    @Html.TextArea("workDone", "", new { id = "workDoneId" })
+
+                </div>
+            </div>
+            <br />
+            <br />  
+                    
+            <div class="row">
+                <div class="col-md-2">
+                    Job Photo if needed  
+                </div>
+                <div class="col-md-3">
+                
+                    <input type="file" id="chooseFileId" name="chooseFileId[]"  multiple/>
+                    <output id="list"></output>
+                        
+                </div>
+            </div>
+            <br /> 
+                
+            <div class="row">
+                <div class="col-md-2">
+                    Did you work on another job today?  
+                </div>
+                <div class="col-md-3">
+                    <input type="radio" name="anotherJob" value="Yes" id="workexpidyes"  />
+                    &nbsp&nbsp @Html.Label("Yes") &nbsp&nbsp
+                    <input type="radio" name="anotherJob" value="No" id="workexpidno" checked="checked" />
+                    &nbsp&nbsp @Html.Label("No")
+                </div>
+            </div>
+            <br />
+                    
+                    
+            <div class="row">
+                <div class="col-md-2">
+                    Owner Comments   
+                </div>
+                <div class="col-md-8">
+                    @Html.TextArea("comment", "", new { id = "commentId" })
+                </div>
+            </div>
+            <br />
+            <br />
+                   
+            <div class="row">
+                <div class="col-md-2">
+                    @Html.TextBox("btn_submit", "Submit", new { type = "button" })
+                </div>
+            </div>
+       </form>
+
+    </div>
+    <br />
+    <br />
+    <script type="text/javascript">
+        var fl = document.getElementById('chooseFileId');
+
+        fl.onchange = function (e) {
+            var ext = this.value.match(/\.(.+)$/)[1];
+            switch (ext) {
+                case 'jpg':
+                case 'bmp':
+                case 'png':
+                case 'tif':
+                    //alert('allowed');
+                    break;
+                default:
+                    alert('Please Select An Image Format File');
+                    this.value = '';
+            }
+        };
+    </script>
+    <script type="text/javascript">
+        function handleFileSelect(evt) {
+            var files = evt.target.files; // FileList object
+
+            // Loop through the FileList and render image files as thumbnails.
+            for (var i = 0, f; f = files[i]; i++) {
+
+                // Only process image files.
+                if (!f.type.match('image.*')) {
+                    continue;
+                }
+
+                var reader = new FileReader();
+
+                // Closure to capture the file information.
+                reader.onload = (function (theFile) {
+                    return function (e) {
+                        // Render thumbnail.
+                        var span = document.createElement('span');
+                        span.innerHTML = ['<img class="thumb" src="', e.target.result,
+                                          '" title="', escape(theFile.name), '"/>'].join('');
+                        document.getElementById('list').insertBefore(span, null);
+                    };
+                })(f);
+
+                // Read in the image file as a data URL.
+                reader.readAsDataURL(f);
+            }
+        }
+
+        document.getElementById('chooseFileId').addEventListener('change', handleFileSelect, false);
+</script>
+</body>
+</html>

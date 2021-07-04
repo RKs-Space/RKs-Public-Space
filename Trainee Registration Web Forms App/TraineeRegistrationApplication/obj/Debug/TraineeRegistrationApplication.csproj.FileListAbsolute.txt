@@ -1,0 +1,102 @@
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\TraineeRegistrationApplication.dll
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\TraineeRegistrationApplication.pdb
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\Antlr3.Runtime.dll
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\EntityFramework.dll
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\Microsoft.Web.Infrastructure.dll
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\Newtonsoft.Json.dll
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Net.Http.dll
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Net.Http.Formatting.dll
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Net.Http.WebRequest.dll
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.Http.dll
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.Http.WebHost.dll
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.Mvc.dll
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.Optimization.dll
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.Providers.dll
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.Razor.dll
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.WebPages.Deployment.dll
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.WebPages.dll
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.WebPages.Razor.dll
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\WebGrease.dll
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\EntityFramework.xml
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\Newtonsoft.Json.xml
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Net.Http.xml
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Net.Http.Formatting.xml
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Net.Http.WebRequest.xml
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.Http.xml
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.Http.WebHost.xml
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.Mvc.xml
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.Razor.xml
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.WebPages.xml
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.WebPages.Deployment.xml
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.WebPages.Razor.xml
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\obj\Debug\TraineeRegistrationApplication.csprojResolveAssemblyReference.cache
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\obj\Debug\TraineeRegistrationApplication.dll
+E:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\obj\Debug\TraineeRegistrationApplication.pdb
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\TraineeRegistrationApplication.dll
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\TraineeRegistrationApplication.pdb
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\Antlr3.Runtime.dll
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\EntityFramework.dll
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\Microsoft.Web.Infrastructure.dll
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\Newtonsoft.Json.dll
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Net.Http.dll
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Net.Http.Formatting.dll
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Net.Http.WebRequest.dll
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.Http.dll
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.Http.WebHost.dll
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.Mvc.dll
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.Optimization.dll
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.Providers.dll
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.Razor.dll
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.WebPages.Deployment.dll
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.WebPages.dll
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.WebPages.Razor.dll
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\WebGrease.dll
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\EntityFramework.xml
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\Newtonsoft.Json.xml
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Net.Http.xml
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Net.Http.Formatting.xml
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Net.Http.WebRequest.xml
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.Http.xml
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.Http.WebHost.xml
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.Mvc.xml
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.Razor.xml
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.WebPages.xml
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.WebPages.Deployment.xml
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.WebPages.Razor.xml
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\obj\Debug\TraineeRegistrationApplication.csprojResolveAssemblyReference.cache
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\obj\Debug\TraineeRegistrationApplication.dll
+J:\Endeavour\COGNIZANT\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\obj\Debug\TraineeRegistrationApplication.pdb
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\TraineeRegistrationApplication.dll
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\TraineeRegistrationApplication.pdb
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\Antlr3.Runtime.dll
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\EntityFramework.dll
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\Microsoft.Web.Infrastructure.dll
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\Newtonsoft.Json.dll
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Net.Http.dll
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Net.Http.Formatting.dll
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Net.Http.WebRequest.dll
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.Http.dll
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.Http.WebHost.dll
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.Mvc.dll
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.Optimization.dll
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.Providers.dll
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.Razor.dll
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.WebPages.Deployment.dll
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.WebPages.dll
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.WebPages.Razor.dll
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\WebGrease.dll
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\EntityFramework.xml
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\Newtonsoft.Json.xml
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Net.Http.xml
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Net.Http.Formatting.xml
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Net.Http.WebRequest.xml
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.Http.xml
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.Http.WebHost.xml
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.Mvc.xml
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.Razor.xml
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.WebPages.xml
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.WebPages.Deployment.xml
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\bin\System.Web.WebPages.Razor.xml
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\obj\Debug\TraineeRegistrationApplication.csprojResolveAssemblyReference.cache
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\obj\Debug\TraineeRegistrationApplication.dll
+R:\Cognizant\From Zeus 1.0\Post Joining\NET-Platforms\Mini-Module\TraineeRegistrationApplication\TraineeRegistrationApplication\obj\Debug\TraineeRegistrationApplication.pdb

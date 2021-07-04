@@ -1,0 +1,311 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!--Scaling ViewPort For Responsiveness-->
+    <meta name="viewport" content="width=device-width" />
+    <title>Add_Trainee_Details</title>
+   
+    <!-- Latest compiled and minified CSS -->
+    <link href="~/Content/Bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <!-- jQuery library -->
+    <script src="~/Content/Jquery/jquery-3.2.1.min.js"></script>
+
+      <!-- Latest compiled JavaScript -->
+    <script src="~/Content/Bootstrap/bootstrap.min.js"></script>
+    
+    
+
+    <!--Designer defined stylesheet-->
+     <link href="~/Content/themes/base/minified/traineeRegistrationStylesheet.css?ver=1.0.1" rel="stylesheet" />
+
+   
+    <!-- Toaster Links-->   
+    <script src="~/Content/Toastr/toastr.min.js"></script>
+    <link href="~/Content/Toastr/toastr.min.css" rel="stylesheet" />
+
+    <!-- Jquery Liks-->
+    <link href="~/Content/themes/base/jquery-ui.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.7.1.min.js"></script>
+    <script src="~/Scripts/jquery-ui-1.8.20.js"></script>
+
+
+   
+    
+    <!--Animation Related Libraries-->
+  
+    <script src="~/Content/Animations/wow.js"></script>
+
+    <link href="~/Content/Animations/animate.css" rel="stylesheet" />
+    
+  <!--Enabling the Animation Plugin-->
+    <script src="wow.min.js"></script>
+              <script>
+                  new WOW().init();
+              </script>
+ @*Script to insert data using web api and ajax call This is the Main Working JS*@
+     <script src="~/Scripts/traineeRegistration.js"></script>
+
+
+ 
+
+   
+    
+    
+</head>
+<body class="parallax layer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12  wow fadeInUp" data-wow-duration="5s" data-wow-delay="0s"">
+                <center><h1>  TRAINEE &nbsp REGISTRATION &nbsp APPLICATION</h1></center>
+            </div>
+        </div>
+
+
+
+        <br /><br />
+   @*The Entire UI Forms are put tOGETHER HERE IN THE FOLLOWING dIVISION*@
+        @using (Html.BeginForm(null,null,FormMethod.Post,new{enctype="multipart/form-data"}))
+        {
+                    <div class="row">
+                <div class="col-md-2">
+                   <span class="bodyText"> Enter Trainee Id </span> <span class="Mandatory-field-marker">*</span>
+                </div>
+                <div class="col-md-3">
+                    <input type="text" id="traineeId" required />
+                </div>
+            </div>
+            <br />
+                   
+            <div class="row">
+                <div class="col-md-2">
+                    <span class="bodyText">Full Name</span>  <span class="Mandatory-field-marker">*</span>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" id="firstNameId" required placeholder="First Name" />
+                </div>
+                <div class="col-md-4">
+                    <input type="text" id="lastNameId" required placeholder="Last Name" />
+                </div>
+            </div>
+            <br />
+                 
+                    
+            <div class="row">
+                <div class="col-md-2">
+                   <span class="bodyText"> Today's Date</span>  <span class="Mandatory-field-marker">*</span>
+                </div>
+                <div class="col-md-5">
+                    @{
+            DateTime dtNow = DateTime.Now;                       
+                    }
+                    <input type="text" id="todaysDateId" value=@dtNow readonly/>
+                </div>
+            </div>
+            <br />
+              
+            <div class="row">
+                <div class="col-md-2">
+                   <span class="bodyText"> Started at </span> <span class="Mandatory-field-marker">*</span>
+                </div>
+                <div class="col-md-8">
+                    <select id="startedAtId">
+                        <option selected="selected" class="startedDropdown">Please Select</option>
+                        <option value="home">Home</option>
+                        <option value="client">Client</option>
+                        <option value="office">Office</option>
+
+                    </select>
+                </div>
+            </div>
+            <br />
+
+            <div class="row">
+                <div class="col-md-2">
+                   <span class="bodyText"> Where</span>  <span class="Mandatory-field-marker">*</span>
+                </div>
+                <div class="col-md-8">
+                    <input type="text" id="whereId" required />
+                </div>
+            </div>
+            <br />                                    
+                    
+            <div class="row">
+                <div class="col-md-2">
+                    <span class="bodyText">Job Name </span> <span class="Mandatory-field-marker">*</span>
+                </div>
+                <div class="col-md-3">
+                    <input type="text" id="jobNameId" required />
+                </div>
+            </div>
+            <br />   
+                    
+            <div class="row">
+                <div class="col-md-2">
+                    <span class="bodyText">Arrived at job </span> <span class="Mandatory-field-marker">*</span>
+                </div>
+                <div class="col-md-4">
+                    <input type="time" id="fromTimeId" required />
+                    &nbsp&nbsp      
+                    
+                    <span class="bodyText"> Until </span> &nbsp&nbsp      
+                 <input type="time" id="untilTimeId" required />
+                </div>
+            </div>
+            <br />
+                    
+            <div class="row">
+                <div class="col-md-2">
+                    <span class="bodyText">Work Done</span>  <span class="Mandatory-field-marker">*</span>
+                </div>
+                <div class="col-md-8">
+                    @Html.TextArea("workDone", "", new { id = "workDoneId" })
+
+                </div>
+            </div>
+            <br />
+            <br />  
+                    
+            <div class="row">
+                <div class="col-md-2">
+                   <span class="bodyText"> Job Photo if needed </span> 
+                </div>
+                <div class="col-md-3">
+                    <span class="bodyText"><input type="file" id="File" name="File[]" multiple/></span>  
+                    <output id="list"></output>
+                </div>
+            </div>
+            <br /> 
+                
+            <div class="row">
+                <div class="col-md-2">
+                   <span class="bodyText"> Did you work on another job today?  </span>
+                </div>
+                <div class="col-md-3">
+                    <input type="radio" name="anotherJob" value="Yes" id="workexpidyes"  />
+                    &nbsp&nbsp <span class="bodyText">@Html.Label("Yes")</span> &nbsp&nbsp
+                    <input type="radio" name="anotherJob" value="No" id="workexpidno" checked="checked" />
+                    &nbsp&nbsp <span class="bodyText">@Html.Label("No")</span>
+                </div>
+            </div>
+            <br />
+                    
+                    
+            <div class="row">
+                <div class="col-md-2">
+                    <span class="bodyText">Owner Comments  </span>
+                </div>
+                <div class="col-md-8">
+                    @Html.TextArea("comment", "", new { id = "commentId" })
+                </div>
+            </div>
+            <br />
+            <br />
+                   
+            <div class="row">
+                <div class="col-md-2">
+                    @*@Html.TextBox("btn_submit", "Submit", new { type = "button"})*@
+                    <input type="button" value="Submit"  class="btn btn-primary btn-lg" id="btn_submit" />
+                </div>
+                <div class="col-md-4">
+                    <span class="bodyText">All Fields Marked &nbsp<span style="color:red">*</span>&nbsp are Mandatory</span>
+                </div>
+            </div>
+        }
+
+    </div>
+    <br />
+    <br />
+
+    @*script for image uploading*@
+    <script type="text/javascript">
+       
+
+
+
+
+
+
+        function handleFileSelect(evt) {
+            var files = evt.target.files; // FileList object
+
+            // Loop through the FileList and render image files as thumbnails.
+            for (var i = 0, f; f = files[i]; i++)
+            {
+
+                 //Only process image files.
+                if (!f.type.match('image.*'))
+                {
+                    continue;
+                }
+            f = files[0];
+                var reader = new FileReader();
+
+                // Closure to capture the file information.
+                reader.onload = (function (theFile) {
+                    return function (e) {
+                        // Render thumbnail.
+                        var span = document.createElement('span');
+                        span.innerHTML = ['<img class="thumb" src="', e.target.result,
+                                          '" title="', escape(theFile.name), '"/>'].join('');
+                        document.getElementById('list').insertBefore(span, null);
+                    };
+                })(f);
+
+                // Read in the image file as a data URL.
+                reader.readAsDataURL(f);
+            }
+        }
+
+            document.getElementById('File').addEventListener('change', handleFileSelect, false);
+            </script>
+
+       
+
+
+@*script for image format restriction*@
+    <script type="text/javascript">
+        var fl = document.getElementById('File');
+
+        fl.onchange = function (e) {
+            var ext = this.value.match(/\.(.+)$/)[1];
+            switch (ext) {
+                case 'jpg':
+                case 'bmp':
+                case 'png':
+                case 'tif':
+                    //alert('allowed');
+                    break;
+                default:
+                    //alert('Please Select An Image Format File');
+                    toastr.options = {
+                        "closeButton": true,
+                        "debug": false,
+                        "newestOnTop": true,
+                        "progressBar": false,
+                        "positionClass": "toast-top-right",
+                        "preventDuplicates": false,
+                        "onclick": null,
+                        "showDuration": "300",
+                        "hideDuration": "1000",
+                        "timeOut": "5000",
+                        "extendedTimeOut": "1000",
+                        "showEasing": "swing",
+                        "hideEasing": "linear",
+                        "showMethod": "fadeIn",
+                        "hideMethod": "fadeOut"
+                    }
+                    toastr.warning("Please Select An Image Format File ", {
+                        "timeOut": "0",
+                        "extendedTImeout": "0"
+                    });
+                    this.value = '';
+            }
+        };
+    </script>
+</body>
+</html>
