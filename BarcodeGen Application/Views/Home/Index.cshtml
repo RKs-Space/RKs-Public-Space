@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Barcode Gen App">
+    <meta name="author" content="RK">
+    <meta name="keywords" content="Barcode Gen App">
+
+    <!-- Title Page-->
+    <title>BarGen App</title>
+    <link runat="server" rel="shortcut icon" href="~/Resources/images/qr-code.ico" type="image/x-icon" />
+    <link runat="server" rel="icon" href="~/Resources/images/qr-code.ico" type="image/ico" />
+    <!-- Icons font CSS-->
+    <link href="~/Resources/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="~/Resources/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="~/Resources/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="~/Resources/css/main.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" type="text/css" href="~/Resources/css/print.min.css">
+
+</head>
+
+<body>
+    <div class="page-wrapper bg-custom p-t-70  font-robo">
+        <div id="toast"><div id="img">Ready</div><div id="desc"></div></div>
+        <div id="toastR"><div id="imgR">Print</div><div id="descR"></div></div>
+        <div class="wrapper wrapper--w960">
+            <div class="card card-2">
+                <div class="card-heading"><button class="btn btn--radius btn--blue" type="submit" id="idGen" onclick="location.href='@Url.Action("SingleBarView", "SingleBar")'">Use Single BarCode</button></div>
+                <div class="card-body">
+                    <h3 class="title">Barcode Generator</h3>
+                    @using (Html.BeginForm("FileUpload", "Home", FormMethod.Post, new { enctype = "multipart/form-data", id = "upForm" }))
+                    {
+                        <div class="row row-space">
+                            <div class="input-group">
+                                <input type="file" id="fileToUpload" class="input--style-2" name="uploadedFile" required accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" />
+                            </div>
+                            <div class="input-group">
+                                <button class="btn btn--radius btn--green" id="btnUpload" type="submit">Upload</button>
+                            </div>
+                            <span class="lbl-error" id="spanfile"></span>
+                            @if (ViewBag.UploadSuccess != null)
+                            {
+                                <span class="lbl-success" id="lblSuccessUpload">@ViewBag.UploadSuccess</span>
+                            }
+                            @if (ViewBag.UploadSuccess != null)
+                            {
+                                <span class="lbl-error" id="lblErrorUpload">@ViewBag.UploadError</span>
+                            }
+                            @if (ViewBag.ExceptionMsg != null)
+                            {
+                                <span class="lbl-error" id="lblException">@ViewBag.ExceptionMsg</span>
+                            }
+                        </div>
+                    }
+                    @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { id = "genForm" }))
+                    {
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple">
+                                @Html.DropDownList("barTypes", ((List<string>)ViewBag.barTypes).Select(m => new SelectListItem { Text = m, Value = m }), "Barcode Type", new { Name = "BarType", Class = "rs-select2 js-select-simple" })
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="input-group">
+                                <input class="input--style-2" type="number" name="bHeight" placeholder="Height Ex:100" id="idHeight" required>
+                            </div>
+                            <div class="input-group">
+                                <input class="input--style-2" type="number" name="bWidth" placeholder="Width Ex:400" id="idWidth" required>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="input-group">
+                                <input class="input--style-2" type="number" name="fSize" placeholder="Font Size Ex:15" id="fontSize" required>
+                            </div>
+                            <div class="input-group">
+                                <div class="rs-select2 js-select-simple">
+                                    @Html.DropDownList("idFontFamily", (IEnumerable<SelectListItem>)ViewData["FontFamilies"], "Choose Font", new { Name = "fontFamily", Class = "rs-select2 js-select-simple" })
+                                    <div class="select-dropdown"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="input-group">
+                                <button class="btn btn--radius btn--green" type="submit" id="idGen">Generate</button>
+                            </div>
+                            <div class="input-group">
+                                <button class="btn btn--radius btn--green" type="button" id="printBar">Print</button>
+                            </div>
+                            @if (ViewBag.BarFeeded != null)
+                            {
+                                <span class="lbl-success" id="lblPrintReady">@ViewBag.BarFeeded</span>
+                            }
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-space" id="contBar">
+        <div id="hiddenBars">
+
+            @if (ViewBag.BarFeeded != null)
+            {
+                <table id="tbBar">
+                    @foreach (var item in ViewData["BarCodesGenerated"] as IList<string>)
+                    {
+
+                    <tr>
+                            <td>
+                                <img src="@item" id="barCodeId" alt="" />
+
+                            </td>
+                    </tr>
+                    }
+                </table>
+            }
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="~/Resources/vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="~/Resources/vendor/select2/select2.min.js"></script>
+
+    <!-- Main JS-->
+    <script src="~/Resources/js/global.js"></script>
+
+    <script src="~/Resources/js/print.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#hiddenBars").css("display", "none");
+
+            var excMsg = $("#lblException").text();
+            if (excMsg.length === 0)
+            {
+                var prnMsg = $("#lblPrintReady").text();
+                if (prnMsg.length > 0) {
+                    launch_toastR();
+                }
+                 var upMsg = $("#lblSuccessUpload").text();
+                if (upMsg.length > 0) {
+                    launch_toast();
+                }
+            }
+
+            $("#printBar").click(function (e) {
+                var sucMsg = $("#lblPrintReady").text();
+                if (sucMsg.length === 0)
+                {
+                    e.preventDefault();
+                }
+                else {
+                    printBarcode();
+                    $("#tbBar").empty();
+                    $("#lblPrintReady").text("");
+                }
+            });
+        });
+
+        
+        function printBarcode() {
+            $("#hiddenBars").css("display", "block");
+            printJS({
+                printable: 'hiddenBars',
+                copies:5,
+                header:'',
+                type: 'html'
+            })
+            $("#hiddenBars").css("display", "none");
+        }
+
+        $('#genForm').submit(function (evt) {
+            var sucMsg = $("#lblSuccessUpload").text();
+            if (sucMsg.length === 0)
+            {
+            evt.preventDefault();
+            }
+         });
+
+        $('#upForm').submit(function (evt) {
+            $("#lblSuccessUpload").text("");
+            $("#lblErrorUpload").text("");
+            var validFile = checkfile();
+            if (!validFile)
+            {
+            evt.preventDefault();
+            }
+        });
+
+        $("#fileToUpload").change(function () {
+            $("#lblSuccessUpload").text("");
+            $("#lblErrorUpload").text("");
+            var validFile = checkfile();
+            if (validFile)
+            {
+               $("#spanfile").text(" ");
+            }
+         });        
+
+         function  checkfile() 
+          {
+           var file = getNameFromPath($("#fileToUpload").val());
+           if (file != null) 
+           {
+           var extension = file.substr((file.lastIndexOf('.') + 1));
+           // alert(extension);
+           switch (extension) {
+                    case 'xls':
+                    case 'xlsx':
+                    flag = true;
+                    break;
+                    default:
+                    flag = false;
+           }
+           }
+           if (flag == false) 
+           {
+           $("#spanfile").text("Upload Excel Type only");
+           return false;
+             }
+           else
+           {
+               return true;
+           }
+        }
+
+        function getNameFromPath(strFilepath) 
+         {
+          var objRE = new RegExp(/([^\/\\]+)$/);
+          var strName = objRE.exec(strFilepath);
+          
+          if (strName == null) 
+          {
+          return null;
+          }
+          else 
+          {
+          return strName[0];
+          }
+         }
+
+        function launch_toast() {
+            var x = document.getElementById("toast")
+            x.className = "show";
+            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+        }
+
+        function launch_toastR() {
+            var x = document.getElementById("toastR")
+            x.className = "show";
+            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+        }
+
+        //function handleOddCopies(Copies) {
+        //        var cMod = Copies % 2;
+        //         var countTD = $("#tbBar > tr > td").length;
+        //    if (Copies == 1) {
+        //        $('#tbBar tr').each(function(){
+        //            $(this).children('td').eq(1).remove();
+        //          });
+        //    }
+        //    else if (cMod != 0) {
+        //        $('#tbBar tr td').slice(countTD - 1, countTD).empty();
+        //    }
+        //}
+
+        //function addRowToTable(table, cell1, cell2) {
+        //    var row;
+        //      row = "<tr><td>" + cell1 + "</td><td>" + cell2 + "</td></tr>";
+        //     table.append(row);
+        //}
+
+
+    </script>
+
+</body>
+
+</html>
+<!-- end document-->
