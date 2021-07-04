@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Movie_Admin.Actor_Master" Collapsed="true">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Actor_Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Movie_Admin.Adder_class">
+    <Position X="5.25" Y="4" Width="1.5" />
+    <InheritanceLine Type="Movie_Admin.Lister" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.375" Y="2.055" />
+        <Point X="6.375" Y="4" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Adder_class.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Movie_Admin.Delete_Master" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Delete_Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Movie_Admin.Director_Master" Collapsed="true">
+    <Position X="16" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Director_Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Movie_Admin.Display_Master">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Display_Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Movie_Admin.Lister">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBAAAAAA=</HashCode>
+      <FileName>Lister.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Movie_Admin.Master_Movie" Collapsed="true">
+    <Position X="14.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAgAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Master_movie_Lister.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Movie_Admin.Modify_Master" Collapsed="true">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modify_Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Movie_Admin.Search_for">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <InheritanceLine Type="Movie_Admin.Lister" FixedToPoint="true">
+      <Path>
+        <Point X="6" Y="1.278" />
+        <Point X="3.438" Y="1.278" />
+        <Point X="3.438" Y="1.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search_for.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Movie_Admin.Switching_Class">
+    <Position X="7.25" Y="2.75" Width="1.5" />
+    <InheritanceLine Type="Movie_Admin.Lister" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.5" Y="1.5" />
+        <Point X="7.938" Y="1.5" />
+        <Point X="7.938" Y="2.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Switching_Class.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
