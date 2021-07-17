@@ -1,0 +1,128 @@
+{
+  "users": [
+    {
+      "email": "user@gmail.com",
+      "password": "user123",
+      "role": "user",
+      "id": 1
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "role": "admin",
+      "id": 2
+    },
+    {
+      "email": "marketing@gmail.com",
+      "password": "marketing123",
+      "role": "marketing",
+      "id": 3
+    },
+    {
+      "email": "varuna@gmail.com",
+      "password": "newpass",
+      "role": "user",
+      "id": 4
+    }
+  ],
+  "programs": [
+    {
+      "id": 1,
+      "programName": "Yoga",
+      "description": "This is a fitness program1",
+      "durationInMonths": 6,
+      "price": 8000,
+      "discountRate": 10,
+      "currentPrice": 6400,
+      "isActive": true
+    },
+    {
+      "id": 2,
+      "programName": "Zumba",
+      "description": "This is a fitness program1",
+      "durationInMonths": 6,
+      "price": 8000,
+      "discountRate": 10,
+      "currentPrice": 6400,
+      "isActive": true
+    },
+    {
+      "id": 3,
+      "programName": "TreadMill",
+      "description": "This is a fitness program1",
+      "durationInMonths": 6,
+      "price": 8000,
+      "discountRate": 10,
+      "currentPrice": 6400,
+      "isActive": true
+    },
+    {
+      "programName": "RK's Regime",
+      "description": "This is a World class Program",
+      "durationInMonths": "6",
+      "price": "20",
+      "discountRate": "12",
+      "currentPrice": "57",
+      "isActive": "true",
+      "id": 4
+    }
+  ],
+  "enquiries": [
+    {
+      "name": "enquery1",
+      "email": "email1@gmail.com",
+      "mobile": "1234567890",
+      "query": "description of query",
+      "status": "inactive",
+      "cseRemarks": "This query is solved",
+      "id": 1
+    },
+    {
+      "name": "Interseted Enquery",
+      "email": "email1@gmail.com",
+      "mobile": "1234567890",
+      "query": "description of query",
+      "status": "inactive",
+      "cseRemarks": "This query is solved",
+      "id": 2
+    },
+    {
+      "name": "Interested to Join",
+      "email": "rk@user.com",
+      "mobile": "1526457839",
+      "query": "I'm interested to join the Yoga Program. Please Call me for confirmation",
+      "id": 3
+    },
+    {
+      "name": "New Query",
+      "email": "new@gmai.com",
+      "mobile": "86386",
+      "query": "kajshgfkgvasf",
+      "id": 4
+    },
+    {
+      "name": "I have Query",
+      "email": "hg@gmail.cmo",
+      "mobile": "723654",
+      "query": "jhsgfjhasf",
+      "id": 5
+    }
+  ],
+  "login": [
+    {
+      "email": "user1@gmail.com",
+      "password": "user123",
+      "id": 1
+    },
+    {
+      "email": "marketing@gmail.com",
+      "password": "marketing123",
+      "id": 2
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "id": 3
+    }
+  ]
+}
