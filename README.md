@@ -1,4 +1,4 @@
-# RKs Public Space    <img src="https://rks-space.github.io/RKs-Public-Space/My%20Resources/r-k.svg" alt="" />
+# RKs Public Space 
 🌱  In Creation I strive and I learn to think Better along the way.. 
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
@@ -14,6 +14,6 @@ I will upload my Personal Projects in the Repository for public use and review. 
 Will Update any other Specific instructions into the Project specific Read me files for reference.
 Happy Coding and Happy Creating stuff.
 
-
+<img src="https://rks-space.github.io/RKs-Public-Space/My%20Resources/r-k.svg" alt="" />
 
 <img src="https://rks-space.github.io/RKs-Public-Space/My%20Resources/BGTry.svg" alt="" />
