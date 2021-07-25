@@ -1,7 +1,6 @@
 ﻿
 
 
-
     
 
         .startedDropdown {
@@ -14,12 +13,13 @@
 
        
  @font-face {
-                        font-family:applicationFont;
-                        src: url(Olegos.otf);
+                        font-family:appFont;
+                        src: url("../../~Content/Fonts/webfontkit/olegos-webfont.woff2") format("woff2"),
+                             url("../../~Content/Fonts/webfontkit/olegos-webfont.woff") format("woff");
                    }
               
         h1 {
-             font-family:applicationFont;
+             font-family:applicationFontappFont;
              color:white;
              line-height:60px; 
                    
@@ -123,30 +123,10 @@
     background-size:cover;
     /*background-color:#464646;*/
     z-index:99;
-    
 }
 
-/*Media Query for Responsiveness Enabling acroos Devices*/
-        @media only screen and (max-width:767px ) 
-        {
-            body 
-            {
-                 background-image: url(background-mobile-device.jpg);
-
-    /* Set a specific height */
-    min-height: 450px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-color:#464646;
-    z-index:99;
-            }
-        }
-         .layer {                               
-                     opacity:0.93;            
+       .layer {                               
+                     opacity:1;            
                }
           /*.layer:hover {                         
                    opacity:1;
@@ -162,3 +142,25 @@
                  z-index:-1;
                  background-color:rgba(0,0,0,0.5);
                           } 
+
+/*Media Query for Responsiveness Enabling acroos Devices*/
+        @media only screen and (max-width:767px ) 
+        {
+            body 
+            {
+                 background-image: url("https://images.pexels.com/photos/441963/pexels-photo-441963.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+
+    /* Set a specific height */
+    min-height: 450px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color:#464646;
+    z-index:99;
+            }
+        }
+        
+           

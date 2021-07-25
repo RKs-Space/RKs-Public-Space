@@ -46,9 +46,9 @@
     <style type="text/css">
         @@font-face {
                         font-family:applicationFont;
-                        src: url(INKFERNO.otf);
+                        src: url(~/Content/Fonts/webfontkit/inkferno-webfont.woff2) format("woff2"),
+                             url(~/Content/Fonts/webfontkit/inkferno-webfont.woff) format("woff"); 
                    }
-              
         h1 {
              font-family:applicationFont;    
              line-height:90px;  
@@ -57,12 +57,16 @@
         body {
              font-family:applicationFont;
              font-size:19px;
-             color:black;
+             color:white;
              z-index:99;
              }
         input[type=text] {
                           width:100%;
+                          color:black;
                          }
+        .textR {
+            color:black;
+        }
         #workDoneId {
                        width:100%;
                        height:120px;
@@ -86,42 +90,6 @@
         .thumb:hover {
                        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
                      }
-
-
-       
-         .parallax {
-    /* The image used */
-    background-image: url("https://static.pexels.com/photos/288157/pexels-photo-288157.jpeg");
-
-    /* Set a specific height */
-    min-height: 450px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index:99;
-    
-}
-
-         .layer {                               
-                     opacity:0.93;            
-               }
-          /*.layer:hover {                         
-                   opacity:1;
-                       }*/
-            .layer:before {
-                 position: fixed;
-                 content:" ";
-                 top:0;
-                 left:0;
-                 width:100%;
-                 height:100%;
-                 display: block;
-                 z-index:-1;
-                 background-color: rgba(0,0,0,0.5);
-                          } 
 
 
     </style>
@@ -186,13 +154,12 @@
                 <div class="col-md-2">
                     Started at  <span class="Mandatory-field-marker">*</span>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8 textR">
                     <select id="startedAtId">
                         <option selected="selected" class="startedDropdown">Please Select</option>
                         <option value="home">Home</option>
                         <option value="client">Client</option>
                         <option value="office">Office</option>
-
                     </select>
                 </div>
             </div>
@@ -222,7 +189,7 @@
                 <div class="col-md-2">
                     Arrived at job  <span class="Mandatory-field-marker">*</span>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 textR">
                     <input type="time" id="fromTimeId" required />
                     &nbsp&nbsp      
                     
@@ -236,7 +203,7 @@
                 <div class="col-md-2">
                     Work Done  <span class="Mandatory-field-marker">*</span>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8 textR">
                     @Html.TextArea("workDone", "", new { id = "workDoneId" })
 
                 </div>
@@ -275,7 +242,7 @@
                 <div class="col-md-2">
                     Owner Comments   
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8 textR">
                     @Html.TextArea("comment", "", new { id = "commentId" })
                 </div>
             </div>
@@ -284,7 +251,10 @@
                    
             <div class="row">
                 <div class="col-md-2">
-                    @Html.TextBox("btn_submit", "Submit", new { type = "button" })
+                     
+                </div>
+                <div class="col-md-4">
+                    @Html.TextBox("btn_submit", "Submit", new { type = "button",@class = "col-sm-6 btn btn-success"  })
                 </div>
             </div>
        </form>
@@ -299,9 +269,15 @@
             var ext = this.value.match(/\.(.+)$/)[1];
             switch (ext) {
                 case 'jpg':
+                case 'jpeg':
                 case 'bmp':
                 case 'png':
                 case 'tif':
+                case 'JPG':
+                case 'JPEG':
+                case 'BMP':
+                case 'PNG':
+                case 'TIF':
                     //alert('allowed');
                     break;
                 default:
@@ -344,3 +320,4 @@
 </script>
 </body>
 </html>
+

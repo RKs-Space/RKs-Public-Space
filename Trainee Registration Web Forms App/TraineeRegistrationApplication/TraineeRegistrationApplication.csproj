@@ -123,11 +123,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="App_Start\Controllers\TraineeAPIController.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="App_Start\Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TraineeAPIController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -139,6 +139,12 @@
     <Content Include="Content\Animations\wow.js" />
     <Content Include="Content\Bootstrap\bootstrap.min.css" />
     <Content Include="Content\Bootstrap\bootstrap.min.js" />
+    <Content Include="Content\Fonts\webfontkit\generator_config.txt" />
+    <Content Include="Content\Fonts\webfontkit\inkferno-demo.html" />
+    <Content Include="Content\Fonts\webfontkit\olegos-demo.html" />
+    <Content Include="Content\Fonts\webfontkit\specimen_files\grid_12-825-55-15.css" />
+    <Content Include="Content\Fonts\webfontkit\specimen_files\specimen_stylesheet.css" />
+    <Content Include="Content\Fonts\webfontkit\stylesheet.css" />
     <Content Include="Content\Jquery\jquery-3.2.1.min.js" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -200,6 +206,12 @@
     <Content Include="Content\Toastr\toastr.min.js" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\Fonts\Olegos.otf" />
+    <Content Include="Content\Fonts\INKFERNO.ttf" />
+    <Content Include="Content\Fonts\webfontkit\inkferno-webfont.woff" />
+    <Content Include="Content\Fonts\webfontkit\inkferno-webfont.woff2" />
+    <Content Include="Content\Fonts\webfontkit\olegos-webfont.woff" />
+    <Content Include="Content\Fonts\webfontkit\olegos-webfont.woff2" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
