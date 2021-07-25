@@ -41,9 +41,9 @@
             // 
             this.ddEnv.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ddEnv.FormattingEnabled = true;
-            this.ddEnv.Items.AddRange(new object[] {
-            "Production",
-            "Stage"});
+            //this.ddEnv.Items.AddRange(new object[] {
+            //"Production",
+            //"Stage"});
             this.ddEnv.Location = new System.Drawing.Point(139, 109);
             this.ddEnv.Name = "ddEnv";
             this.ddEnv.Size = new System.Drawing.Size(135, 21);

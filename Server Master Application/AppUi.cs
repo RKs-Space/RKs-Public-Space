@@ -1,4 +1,5 @@
 ﻿using Spire.Xls;
+using Spire.Xls.Collections;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,12 +31,16 @@ namespace Server_Master
         public Dictionary<string, string> dcStageServerList = new Dictionary<string, string>();
 
 
+
         private void AppUi_Load(object sender, EventArgs e)
         {
             lblException.Visible = false;
             lblServer.Visible = false;
             ddServer.Enabled = false;
             btnOpenServer.Enabled = false;
+            //readonly
+            ddEnv.DropDownStyle = ComboBoxStyle.DropDownList;
+            ddServer.DropDownStyle = ComboBoxStyle.DropDownList;
             setServerList();
         }
 
@@ -66,6 +71,13 @@ namespace Server_Master
             string szServerListPath = Convert.ToString(ConfigurationManager.AppSettings["serverListPath"]).Trim();
             Workbook workbook = new Workbook();
             workbook.LoadFromFile(szServerListPath);
+            DataSet dsEnvironmentSet = new DataSet();
+            WorksheetsCollection worksheets = workbook.Worksheets;
+            foreach (var sheets in worksheets)
+            {
+                ddEnv.Items.Add(sheets.Name);
+                //dsEnvironmentSet.Tables.Add(workbook.Worksheets[sheets.Name].ExportDataTable());
+            }
             Worksheet sheetProd = workbook.Worksheets[0];
             dtbProdServerList = sheetProd.ExportDataTable();
             Worksheet sheetStage = workbook.Worksheets[1];
