@@ -1,7 +1,7 @@
 # RKs Public Space 
 🌱  In Creation I strive and I learn to think Better along the way.. 
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)      <img src="https://rks-space.github.io/RKs-Public-Space/My%20Resources/r-k.svg" alt="" />
 - 👋 Hey There, I’m @RK 
 - 👀 I’m interested in learning cool stuffs related to WebDevelopment and C# Language and the latest technologies in the Development domain. 
       I also am fascinated by the Automation technologies these days for setting up workflows making a daily task that much more simpler. 
@@ -14,6 +14,5 @@ I will upload my Personal Projects in the Repository for public use and review. 
 Will Update any other Specific instructions into the Project specific Read me files for reference.
 Happy Coding and Happy Creating stuff.
 
-<img src="https://rks-space.github.io/RKs-Public-Space/My%20Resources/r-k.svg" alt="" />
 
 <img src="https://rks-space.github.io/RKs-Public-Space/My%20Resources/BGTry.svg" alt="" />
