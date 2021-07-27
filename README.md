@@ -8,7 +8,7 @@
       Will share few articles and some Simple learning hands on projects as and when I learn them
 - ❄️ I’m currently learning Reacts.js
 - 💞️ I’m looking to collaborate on any WebDevelopment project or Automation Project that you come across and say - that's Futuristic and something I wanna do
-- 📫 How to reach me ... Will update this soon 
+- 📫 Reach me @ hi.rk.listens2u@gmail.com
 
 I will upload my Personal Projects in the Repository for public use and review. I hope to contribute with some basic and advanced applications as and when I progress in my career. 
 Will Update any other Specific instructions into the Project specific Read me files for reference.
